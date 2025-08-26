@@ -1,0 +1,19 @@
+﻿version: '3.8'
+
+services:
+  quantum-processor:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - FLASK_ENV=development
+    volumes:
+      - .:/app
+    restart: unless-stopped
+    
+  # Optional: Add Redis for caching results
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
