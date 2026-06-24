@@ -27,7 +27,7 @@ Production-ready quantum image processing application with real-time capabilitie
 ### One-Click Deployment
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/quantum-image-processor.git
+git clone https://github.com/Komal-phogat/quantum-image-processor.git
 cd quantum-image-processor
 
 # Deploy to Azure (requires Azure CLI)
@@ -44,7 +44,7 @@ cd quantum-image-processor
 ### Setup
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/quantum-image-processor.git
+git clone https://github.com/Komal-phogat/quantum-image-processor.git
 cd quantum-image-processor
 
 # Install dependencies
