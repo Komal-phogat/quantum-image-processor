@@ -1,53 +1,52 @@
-﻿# Quantum Image Processing - Azure Cloud Deployment
-
+# 🌌 Quantum Image Processing Framework
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 
-##  Overview
+## 📝 Overview
+A high-performance Quantum Image Processing (QIP) application built to bridge quantum computing simulation primitives with traditional computer vision workflows. The core framework implements hybrid quantum-classical algorithms for parallelized, accelerated image manipulation, designed with a concurrent backend to handle multi-threaded processing tasks.
 
-Production-ready quantum image processing application with real-time capabilities, optimized for Azure Container Apps deployment. This project demonstrates advanced quantum computing algorithms for efficient image data processing including edge detection, compression, and feature extraction.
+---
 
-##  Features
+## 🚀 Key Features
 
-### Quantum Algorithms
-- **Quantum Edge Detection**: Enhanced edge detection using quantum superposition and entanglement
-- **Quantum Image Compression**: Achieve 75% compression ratio using quantum state preparation
-- **Quantum Feature Extraction**: Extract quantum features using Hadamard gates and controlled rotations
-- **Quantum Fourier Transform**: Frequency domain analysis with quantum circuits
+### 🧮 Quantum Algorithms
+* **Quantum Edge Detection:** Uses quantum superposition and entanglement principles to identify spatial boundaries.
+* **Quantum Image Compression:** Utilizes compact quantum state preparation (such as Novel Enhanced Quantum Representation / NEQR mapping) to achieve a theoretical 75% structural size reduction.
+* **Quantum Feature Extraction:** Employs Hadamard gates and controlled rotations ($CR_y$) to extract high-dimensional image features.
+* **Quantum Fourier Transform (QFT):** Executes localized frequency domain analysis directly within simulated quantum circuits.
 
-### Real-time Processing
-- **Multi-threaded Architecture**: Process multiple images simultaneously
-- **Queue Management**: Efficient task queuing and processing
-- **Live Statistics**: Real-time monitoring and performance metrics
-- **Auto-scaling**: Designed for Azure Container Apps auto-scaling
+### ⚡ Concurrent Core Engine
+* **Multi-Threaded Pipeline:** Asynchronous backend processing engineered to handle multiple image processing requests simultaneously without thread-blocking.
+* **Queue Management:** Robust task queuing to maintain operational health under high-throughput request spikes.
+* **Live Analytics & Diagnostics:** Exposes metrics endpoints to monitor execution performance, system resource consumption, and processing speed (~2,000 pixels/second).
 
-##  Quick Deploy to Azure
+---
 
-### One-Click Deployment
+## 🛠️ Tech Stack & Prerequisites
+
+* **Languages & Core:** Python 3.11+
+* **Quantum Simulation:** Qiskit / PennyLane
+* **Backend Architecture:** Flask / FastAPI
+* **Matrix Operations:** NumPy, Pillow (PIL)
+
+---
+
+## 💻 Local Development
+
+### 1. Clone & Navigate
 ```bash
-# Clone the repository
-git clone https://github.com/Komal-phogat/quantum-image-processor.git
+git clone [https://github.com/Komal-phogat/quantum-image-processor.git](https://github.com/Komal-phogat/quantum-image-processor.git)
 cd quantum-image-processor
 
-# Deploy to Azure (requires Azure CLI)
-./deploy.sh
 ```
-
-##  Local Development
-
-### Prerequisites
-- Python 3.11+
-- Docker (optional)
-- Azure CLI (for deployment)
-
 ### Setup
 ```bash
-# Clone repository
-git clone https://github.com/Komal-phogat/quantum-image-processor.git
-cd quantum-image-processor
+# Create and activate a virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
-# Install dependencies
+# Install required dependencies
 pip install -r requirements.txt
 
 # Run locally
@@ -62,36 +61,11 @@ python app.py
 | POST | `/api/process` | Submit image for quantum processing |
 | GET | `/api/result/{id}` | Get processing result |
 | GET | `/api/stats` | Get server statistics |
-| GET | `/health` | Health check endpoint |
 
-##  Architecture
 
-Production-ready quantum image processing with Azure Container Apps, featuring:
-- Serverless scaling (0 to N replicas)
-- Pay per use pricing model
-- Built-in load balancing
-- HTTPS termination
-- Health monitoring
 
-##  Performance Metrics
-
-- **Processing Speed**: ~2,000 pixels/second
-- **Compression Ratio**: 75% size reduction
-- **Edge Detection Quality**: 95% accuracy
-- **Quantum Features**: 256 features per image
-- **Scalability**: 1-100 concurrent replicas
-
-##  Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
 
 ##  License
 
 MIT License - see LICENSE file for details.
 
----
-
-**Built with  using Quantum Computing and Azure Cloud**
